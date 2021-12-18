@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(8, 61, 97);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    width: auto;
+    cursor: pointer;
+    margin: 12px 24px;
+    padding: 8px 16px;
+    background-color: white;
+    color: rgb(8, 61, 97);
+    font-size: 2em;
+    border-radius: 50%;
+}
+
+.nav-bar-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar-li {
+    padding: 16px 32px;
+}
+
+.nav-bar-items li a {
+    font-weight: 950;
+    font-size: 1.25em;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    max-width: 1200px;
+    margin : 0 auto;
+    margin-bottom: 200px;
+    padding: 0px 32px;
+}
+
+#portofolio-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 140px;
+    margin: 0 1.5em;
+}
+
+.container {
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: right;
+    padding-top: 140px;
+    margin: 0 1.5%;
+}
+
+#profile-picture {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 70%;
+    margin-right: 2.25em;
+}
+
+.tittle-1{
+    margin: 24px 0px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: teal;
+}
+
+.subtitle {
+    font-size: 1.50em;
+    line-height: 1.4;
+    margin: 24px 0;
+}
+
+#bio {
+    margin-left: 96px;
+}
+
+.social-media-container a {
+    margin-right: 16px;
+}
+
+.social-media-container a img {
+    height: 30px;
+}
+
+hr {
+    margin: 32px 1.5%;
+}
+
+.portofolio-picture {
+    height: 250px;
+    width: 300px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.portofolio-card {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 19px 1.5px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.portofolio-card div {
+    width: 60%;
+    margin-left: 1px;
+    margin-right: 16px;
+}
+
+.title-2 {
+    padding-top: 96px;
+    margin-left: 1.5%;
+    font-size: 2em;
+    color: rgb(29, 29, 31);
+    font-weight: 700;
+}
+
+.title-3 {
+    color: rgb(29, 29, 31);
+    margin: 16px 0px;
+    font-size: 2em;
+    font-size: 700;
+}
+
+.title-4 {
+    font-size: 1em;
+    margin: 8px 0px;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.skill-card {
+    flex: 0 0 22%;
+    background-color: rgb(134, 206, 219);
+    margin: 16px 1.5%;
+    font-size: 1.25em;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.skill-picture {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 16px;
+    object-fit: contain;
+
+}
+
+.skill-title {
+    margin-bottom: 19px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1em;
+    color: #1e1f22;
+}
+
+.experience-card {
+    margin: 32px 1.5%;
+    background-color: rgb(134, 206, 219);
+    padding: 16px;
+    font-size: 1em;
+    background-color: rgb(134, 206, 219);
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.experience {
+    font-size: 1.50em;
+}
+
+.description {
+    line-height: 1.5;
+    font-size: 1.50em;
+}
+
+.education-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.education-card {
+    flex: 0 1 30px;
+    margin: 16px 1.5%;
+    padding: 16px 16px;
+    font-size: 1em;
+    background-color: rgb(134, 206, 219); 
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.education {
+    font-size: 1.20em;
+}
+
+.education-picture {
+    height: auto;
+    width: 100px;
+    border-radius: 1opx;
+}
+
+footer{
+    text-align: center;
+    padding: 32px;
+    background-color: rgb(8, 61, 97);
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        position: static;
+        flex-direction: column;
+    }
+
+    .nav-bar-items {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #profile-container {
+        padding-top: 32px;
+        flex-direction: column;
+    }
+
+    #bio {
+        margin: 16px;
+        padding: 16px 0px;
+    }
+
+    .portofolio-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portofolio-card div {
+        width: 100%;
+        margin: 16px;
+    }
+
+    .portofolio-picture {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .skill-card{
+        flex: 0 1 47%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .education-card {
+        flex: 0 1 97%;
+    }
+}
